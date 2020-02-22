@@ -16,8 +16,8 @@ import NeuralNetwork
 # import matplotlib.pyplot as plt
 
 
-NEURAL_NETWORKS_N = 10 # must be multiple of 5 !!!
-ITERATION_N = 25
+NEURAL_NETWORKS_N = 20 # must be multiple of 5 !!!
+ITERATION_N = 40
 
 
 
@@ -142,7 +142,7 @@ if __name__ == '__main__':
         if(r3<1):
             return libSortedScore[0][0], libSortedScore[0][3]
         r = random.randint(0,r3-1)
-        return libSortedScore[r][0], libSortedScore[r][3]
+        return libSortedScore[r3-1][0], libSortedScore[r3-1][3]
 
 
 
@@ -197,7 +197,7 @@ if __name__ == '__main__':
         for i in range(N//5):
              new_neural_network.append(deepcopy(mutate(results[i][0].cross(results[i+1][0]))))
         for i in range(N//5):
-            new_neural_network.append(NeuralNetwork.NeuralNetwork(1,20,6))
+            new_neural_network.append(NeuralNetwork.NeuralNetwork(1,40,6))
         return new_neural_network
         
 
@@ -208,7 +208,7 @@ if __name__ == '__main__':
         best_score = 0; best_conf = False;
         # create neural networks
         for i in range(M):
-            neural_networks.append(NeuralNetwork.NeuralNetwork(1,20,6))
+            neural_networks.append(NeuralNetwork.NeuralNetwork(1,40,6))
         pbar = tqdm.tqdm(total=N)
         print(" Starting training...")
         # Run iterations

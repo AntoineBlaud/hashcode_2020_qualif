@@ -78,14 +78,14 @@ class NeuralNetwork:
             for h in range(len(self.hidden_layer.neurons)):
                 for j in range(len(self.output_layer.neurons[o].weights)):
                     r = random.random()
-                    if(r>0.8):
+                    if(r>0.7):
                         self.output_layer.neurons[o].weights[j] =  custom_random(self.num_outputs)
 
         for h in range(len(self.hidden_layer.neurons)):
             for i in range(self.num_inputs):
                 for j in range(len(self.hidden_layer.neurons[h].weights)):
                     r = random.random()
-                    if(r>0.8):
+                    if(r>0.7):
                         self.hidden_layer.neurons[h].weights[j] = custom_random(self.num_hidden)
 
         return self
