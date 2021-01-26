@@ -19,25 +19,6 @@ import NeuralNetwork
 NEURAL_NETWORKS_N = 20 # must be multiple of 5 !!!
 ITERATION_N = 40
 
-
-
-#########################################################
-# Lire 3 fois le problème
-# Communiquer afin de bien être d'accord sur ce qu'il faut faire (le sujet du problème)
-# Mettre sujet sur téléphone
-
-# Voir ensemble algo:
-#   - complexité
-#   - structure de données à utiliser
-#   - structure principale du code (étapes importantes)
-#   - Performances (travailler avec des index, faire des listes et dictionnaire constant, optimiser la boucle appelée le plus de fois)
-#   - les différentes inputs
-#   - analogie avec un ancien problème ou autre
-#
-# Checkpoint:
-#   toute les 30 minutes
-#
-#########################################################
 if __name__ == '__main__':
 
     FILE = "f_libraries_of_the_world"
